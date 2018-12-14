@@ -1,0 +1,15 @@
+<?php
+
+$dbServername = "localhost";
+
+$dbUsername = "root";
+
+$dbpassword = "phpmysql";
+
+$dbName = "cms";
+
+$connect = mysqli_connect($dbServername, $dbUsername, $dbpassword, $dbName);
+if (!$connect) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
